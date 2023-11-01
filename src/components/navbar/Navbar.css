@@ -1,0 +1,142 @@
+header {
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header .catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 48px;
+  width: 165px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .catalog:hover {
+  color: #da002b;
+  border-color: #da002b;
+}
+header .catalog svg {
+  font-size: 30px;
+}
+.carts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.bars {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.bars .line1,
+.bars .line2,
+.bars .line3 {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.bars .line1 {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+}
+
+.bars .line3 {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+}
+header .input {
+  position: relative;
+}
+header .input input {
+  width: 510px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  text-indent: 15px;
+}
+header .input button {
+  height: 45px;
+  width: 72px;
+  background-color: #da002b;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  cursor: pointer;
+}
+header .input button svg {
+  font-size: 30px;
+}
+header .icons {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .icons .icon svg {
+  font-size: 30px;
+}
+header .icons .bascat {
+  position: relative;
+}
+header .icons .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .icons .icon:hover {
+  color: #da002b;
+}
+header .icons .icon span {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  padding: 1px 5px;
+  background-color: #da002b;
+  border-radius: 50%;
+  color: #fff;
+}
+.line1__style {
+  transform: rotate(120deg);
+  top: 15px;
+  left: 2px;
+}
+.line2__none {
+  display: none;
+}
+.line3__style {
+  transform: rotate(50deg);
+  top: 15px;
+  left: 2px;
+}
