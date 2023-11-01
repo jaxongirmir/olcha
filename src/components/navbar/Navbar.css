@@ -140,3 +140,19 @@ header .icons .icon span {
   top: 15px;
   left: 2px;
 }
+@media screen and (max-width: 1300px) {
+  header {
+    justify-content: space-around;
+  }
+  header .input {
+    display: none;
+  }
+  header .icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .catalog {
+    display: none;
+  }
+}
