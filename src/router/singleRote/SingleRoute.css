@@ -1,0 +1,153 @@
+.all_route {
+  padding: 50px 20px;
+}
+.single {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 100px;
+  padding: 50px 0 200px;
+}
+.top_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+.top_title .stars {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.top_title .stars button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.top_title .stars svg {
+  font-size: 25px;
+  color: #da002b;
+}
+.single .left__single img {
+  aspect-ratio: 9/9;
+  width: 400px;
+  object-fit: contain;
+  user-select: none;
+}
+.single .right__single ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.single .right__single ul li {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.single .right__single ul li span {
+  color: #999999;
+}
+.single .right__single ul li span i {
+  user-select: none;
+  cursor: auto;
+}
+.single .right__single ul li span:nth-child(2) {
+  color: #000;
+}
+.bottom {
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 200px 0 0;
+}
+.bottom h1 {
+  font-weight: 500;
+  padding: 0 0 50px;
+}
+.bottom p {
+  font-size: 14px;
+  color: #9999b2;
+}
+.order {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 30px;
+  width: 1000px;
+  height: 200px;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 20px;
+  border: 1px solid #9999;
+}
+.order .left__order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+.order .left__order .location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.order .left__order h1 {
+  font-weight: 500;
+}
+.order .left__order p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.order .left__order span {
+  display: block;
+  color: #999999;
+  width: 350px;
+}
+.order .center__order span {
+  display: block;
+  width: 350px;
+  color: #999999;
+}
+.order .right__order {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+.order .right__order .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.order .right__order .price del {
+  color: #999999;
+}
+.order .right__order .price h1 {
+  color: #da002b;
+}
+.order .right__order button {
+  width: 180px;
+  height: 40px;
+  background-color: #12bf6c;
+  border: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}

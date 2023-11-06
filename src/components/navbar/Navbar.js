@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { DATA } from "../../static";
-import Cart from "../../router/cart/Cart";
 import logoImg from "../../assets/logoImg.svg";
 import { BiSearch, BiUser } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [buy, setBuy] = useState(0);
+  const { pathname } = useLocation();
+  console.log(pathname);
+  if (pathname === "/signup") {
+    return (
+      <NavLink className="active" to={"/"}>
+        Home
+      </NavLink>
+    );
+  }
   return (
     <div className="navbar">
       <header>
-        <img src={logoImg} alt="logo img" />
+        <NavLink className="active" to={"/"}>
+          <img src={logoImg} alt="logo img" />
+        </NavLink>
         <div
           className="catalog"
           onClick={() => {
@@ -51,17 +61,14 @@ function Navbar() {
             <p>Корзина</p>
             <span>{buy}</span>
           </div>
-          <div className="icon">
-            <BiUser />
-            <p>Войти</p>
-          </div>
+          <NavLink to={"/signup"}>
+            <div className="icon">
+              <BiUser />
+              <p>Войти</p>
+            </div>
+          </NavLink>
         </div>
       </header>
-      <div className="carts">
-        {DATA?.map((object, inx) => (
-          <Cart key={inx} {...object} buy={buy} />
-        ))}
-      </div>
     </div>
   );
 }

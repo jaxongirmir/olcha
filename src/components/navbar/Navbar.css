@@ -115,6 +115,10 @@ header .icons .icon {
   cursor: pointer;
   transition: 0.3s;
 }
+header .icons a {
+  color: #333;
+  text-decoration: none;
+}
 header .icons .icon:hover {
   color: #da002b;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Cart.css";
-import { brm } from "number-brm";
 import { SlBasket } from "react-icons/sl";
 import { AiOutlineHeart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Cart({
   title,
@@ -18,7 +18,9 @@ function Cart({
     <div className="home">
       <div className="cart">
         <div className="top__cart">
-          <img src={url} alt="Product img" />
+          <Link to={`product/${id}`}>
+            <img src={url} alt="Product img" />
+          </Link>
           <button className="heart">
             <AiOutlineHeart />
           </button>
@@ -29,12 +31,10 @@ function Cart({
         <div className="bottom__cart">
           <div className="texts">
             <p className="title">{title}</p>
-            <del className="old_price">{firsPrice.brm()} сум</del>
-            <p className="price">{price.brm()} сум</p>
+            <del className="old_price">{firsPrice} сум</del>
+            <p className="price">{price} сум</p>
             <div className="credit">
-              <p className="credit_p">
-                {Math.round(price / 12).brm()} сум x 12 мес
-              </p>
+              <p className="credit_p">{Math.round(price / 12)} сум x 12 мес</p>
             </div>
           </div>
         </div>
@@ -42,7 +42,9 @@ function Cart({
           <button>
             <SlBasket />
           </button>
-          <button>В расрочку</button>
+          <Link to={"product/" + id}>
+            <button className="button">В расрочку</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -5,3 +5,17 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+.button {
+  height: 40px;
+  width: 240px;
+  background-color: #fff;
+  border: 2px solid #da002b;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: #da002b;
+  font-size: 20px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #da002c10;
+}
