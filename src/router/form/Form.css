@@ -1,0 +1,77 @@
+.form_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 400px;
+  height: 550px;
+  background-color: #da002b;
+  border-radius: 20px;
+}
+.form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.form .inputs input {
+  width: 300px;
+  height: 40px;
+  background-color: #da002b;
+  color: #ddd;
+  outline: none;
+  border: 2px solid #ddd;
+  text-indent: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.form .inputs input::placeholder {
+  color: #ddd;
+  font-size: 18px;
+}
+.form .btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.form .btns button {
+  width: 300px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.login {
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.login .form__login {
+  width: 450px;
+  height: 600px;
+  background-color: #da002b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

@@ -4,7 +4,7 @@ import logoImg from "../../assets/logoImg.svg";
 import { BiSearch, BiUser } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, Link } from "react-router-dom";
 
 function Navbar() {
   const [buy, setBuy] = useState(0);
@@ -12,9 +12,9 @@ function Navbar() {
   console.log(pathname);
   if (pathname === "/signup") {
     return (
-      <NavLink className="active" to={"/"}>
-        Home
-      </NavLink>
+      <Link to={"/"}>
+        <button className="homeBtn">Home</button>
+      </Link>
     );
   }
   return (

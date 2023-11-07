@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cart.css";
 import { SlBasket } from "react-icons/sl";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Cart({
@@ -14,6 +14,14 @@ function Cart({
   characteristics,
   url,
 }) {
+  const [icon, setIcon] = useState(false);
+
+  const icn = icon ? (
+    <AiFillHeart style={{ color: "red" }} />
+  ) : (
+    <AiOutlineHeart />
+  );
+
   return (
     <div className="home">
       <div className="cart">
@@ -21,8 +29,11 @@ function Cart({
           <Link to={`product/${id}`}>
             <img src={url} alt="Product img" />
           </Link>
-          <button className="heart">
-            <AiOutlineHeart />
+          <button
+            className="heart"
+            onClick={() => (icon ? setIcon(false) : setIcon(true))}
+          >
+            {icn}
           </button>
           <div className="discount">
             <p className="discount_p">{discount}</p>

@@ -7,6 +7,21 @@ header {
   align-items: center;
   padding: 10px;
 }
+.homeBtn {
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #da002b;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  position: fixed;
+  top: 10px;
+  right: 30px;
+
+  cursor: pointer;
+}
 header .catalog {
   display: flex;
   justify-content: center;
